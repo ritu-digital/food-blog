@@ -8,7 +8,7 @@
 }
 .searchPage__container {
   width: 75%;
-  margin: 3rem auto;
+  margin: 1.8rem auto;
 }
 
 .img-container {
@@ -20,4 +20,9 @@
 .img-container img {
   width: 100%;
   object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .img-container {
+    height: auto;
+  }
 }
