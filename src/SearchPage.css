@@ -1,0 +1,23 @@
+.searchPage {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.searchPage__container {
+  width: 75%;
+  margin: 3rem auto;
+}
+
+.img-container {
+  width: 100%;
+  height: 622px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  object-fit: cover;
+}

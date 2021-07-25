@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+  position: relative;
+}
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid lightgray;
+  padding: 1.5rem;
+}
