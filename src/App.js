@@ -13,7 +13,7 @@ function App() {
       <div className='app'>
         <Navbar />
         <Switch>
-          <Route exact path='/'>
+          <Route path='/'>
             <HomePage />
           </Route>
           <Route exact path='/searchpage/mangocheesecake'>
