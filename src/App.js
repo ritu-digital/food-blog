@@ -9,24 +9,24 @@ import { recipeData } from './data/recipeData';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className='app'>
         <Navbar />
         <Switch>
-          <Route path='/'>
-            <HomePage />
-          </Route>
-          <Route exact path='/searchpage/mangocheesecake'>
+          <Route path='/searchpage/mangocheesecake'>
             <SearchPage recipes={recipeData[0]} />
           </Route>
-          <Route exact path='/searchpage/raspberry'>
+          <Route path='/searchpage/raspberry'>
             <SearchPage recipes={recipeData[1]} />
           </Route>
-          <Route exact path='/searchpage/mangoicecream'>
+          <Route path='/searchpage/mangoicecream'>
             <SearchPage recipes={recipeData[2]} />
           </Route>
-          <Route exact path='/recipes'>
+          <Route path='/recipes'>
             <AllRecipesPage />
+          </Route>
+          <Route path='/'>
+            <HomePage />
           </Route>
         </Switch>
         <Footer />
