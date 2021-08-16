@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AllRecipesPage from './components/AllRecipesPage';
 import Footer from './components/Footer';
@@ -9,7 +9,7 @@ import { recipeData } from './data/recipeData';
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <div className='app'>
         <Navbar />
         <Switch>
@@ -25,13 +25,13 @@ function App() {
           <Route path='/recipes'>
             <AllRecipesPage />
           </Route>
-          <Route path='/'>
+          <Route path='/' exact>
             <HomePage />
           </Route>
         </Switch>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
